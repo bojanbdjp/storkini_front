@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/storkini_front/static/css/main.b3b317f4.chunk.css",
-    "main.js": "/storkini_front/static/js/main.f6529383.chunk.js",
-    "main.js.map": "/storkini_front/static/js/main.f6529383.chunk.js.map",
+    "main.css": "/storkini_front/static/css/main.14a231d7.chunk.css",
+    "main.js": "/storkini_front/static/js/main.7357d42d.chunk.js",
+    "main.js.map": "/storkini_front/static/js/main.7357d42d.chunk.js.map",
     "runtime-main.js": "/storkini_front/static/js/runtime-main.95b5cf05.js",
     "runtime-main.js.map": "/storkini_front/static/js/runtime-main.95b5cf05.js.map",
-    "static/css/2.1971edad.chunk.css": "/storkini_front/static/css/2.1971edad.chunk.css",
-    "static/js/2.00629978.chunk.js": "/storkini_front/static/js/2.00629978.chunk.js",
-    "static/js/2.00629978.chunk.js.map": "/storkini_front/static/js/2.00629978.chunk.js.map",
+    "static/css/2.19b273f3.chunk.css": "/storkini_front/static/css/2.19b273f3.chunk.css",
+    "static/js/2.32210a0e.chunk.js": "/storkini_front/static/js/2.32210a0e.chunk.js",
+    "static/js/2.32210a0e.chunk.js.map": "/storkini_front/static/js/2.32210a0e.chunk.js.map",
     "index.html": "/storkini_front/index.html",
-    "static/css/2.1971edad.chunk.css.map": "/storkini_front/static/css/2.1971edad.chunk.css.map",
-    "static/css/main.b3b317f4.chunk.css.map": "/storkini_front/static/css/main.b3b317f4.chunk.css.map",
-    "static/js/2.00629978.chunk.js.LICENSE.txt": "/storkini_front/static/js/2.00629978.chunk.js.LICENSE.txt",
+    "static/css/2.19b273f3.chunk.css.map": "/storkini_front/static/css/2.19b273f3.chunk.css.map",
+    "static/css/main.14a231d7.chunk.css.map": "/storkini_front/static/css/main.14a231d7.chunk.css.map",
+    "static/js/2.32210a0e.chunk.js.LICENSE.txt": "/storkini_front/static/js/2.32210a0e.chunk.js.LICENSE.txt",
     "static/media/AdBox.css": "/storkini_front/static/media/add_two.b19c7f95.png",
     "static/media/WelcomePage.css": "/storkini_front/static/media/welcome-family.c4038b94.png",
     "static/media/gb.8c455555.png": "/storkini_front/static/media/gb.8c455555.png",
     "static/media/leftLogo.97cad5ed.png": "/storkini_front/static/media/leftLogo.97cad5ed.png",
     "static/media/logo-white.291eb28f.png": "/storkini_front/static/media/logo-white.291eb28f.png",
-    "static/media/MapModal.css": "/storkini_front/static/media/serbia_map.eaebfbdb.png"
+    "static/media/MapModal.css": "/storkini_front/static/media/serbia_map.eaebfbdb.png",
+    "static/media/trans-logo.043703c5.png": "/storkini_front/static/media/trans-logo.043703c5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.95b5cf05.js",
-    "static/css/2.1971edad.chunk.css",
-    "static/js/2.00629978.chunk.js",
-    "static/css/main.b3b317f4.chunk.css",
-    "static/js/main.f6529383.chunk.js"
+    "static/css/2.19b273f3.chunk.css",
+    "static/js/2.32210a0e.chunk.js",
+    "static/css/main.14a231d7.chunk.css",
+    "static/js/main.7357d42d.chunk.js"
   ]
 }
