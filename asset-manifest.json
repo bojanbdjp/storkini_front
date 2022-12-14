@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/storkini_front/static/css/main.6ee60ba6.chunk.css",
-    "main.js": "/storkini_front/static/js/main.029bc11f.chunk.js",
-    "main.js.map": "/storkini_front/static/js/main.029bc11f.chunk.js.map",
+    "main.js": "/storkini_front/static/js/main.405ec363.chunk.js",
+    "main.js.map": "/storkini_front/static/js/main.405ec363.chunk.js.map",
     "runtime-main.js": "/storkini_front/static/js/runtime-main.95b5cf05.js",
     "runtime-main.js.map": "/storkini_front/static/js/runtime-main.95b5cf05.js.map",
     "static/css/2.19b273f3.chunk.css": "/storkini_front/static/css/2.19b273f3.chunk.css",
@@ -25,6 +25,6 @@
     "static/css/2.19b273f3.chunk.css",
     "static/js/2.a7bc1635.chunk.js",
     "static/css/main.6ee60ba6.chunk.css",
-    "static/js/main.029bc11f.chunk.js"
+    "static/js/main.405ec363.chunk.js"
   ]
 }
