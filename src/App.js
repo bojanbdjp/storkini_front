@@ -32,7 +32,7 @@ function App() {
       
   return (
     (localStorage.getItem('welcomeLoaded') == null && !stateWelcomeLoaded) ? welcome : (
-      
+      // "homepage": "https://bojanbdjp.github.io/storkini_front",
       // basename={`${process.env.PUBLIC_URL}/`}
       <BrowserRouter >
         <Routes>
