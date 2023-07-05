@@ -33,7 +33,8 @@ function App() {
   return (
     (localStorage.getItem('welcomeLoaded') == null && !stateWelcomeLoaded) ? welcome : (
       
-      <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
+      // basename={`${process.env.PUBLIC_URL}/`}
+      <BrowserRouter >
         <Routes>
           <Route  path="/" element={<Outline />} >
               <Route index  element={<Home />} />

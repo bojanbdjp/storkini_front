@@ -10,7 +10,7 @@ function Home() {
     return (
         <div className='col-12 px-0'>
             {/* <HomeBanner /> */}
-            <MainIcons />
+            {/* <MainIcons /> */}
             <HomeCategories />
             <AdBox />
         </div>
