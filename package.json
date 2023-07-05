@@ -1,0 +1,71 @@
+{
+  "name": "postcard-front",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://bojanbdjp.github.io/storkini_front",
+  "dependencies": {
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@material-ui/core": "^4.12.3",
+    "@mui/material": "^5.2.5",
+    "@mui/styles": "^5.2.3",
+    "@rsuite/icons": "^1.0.2",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.24.0",
+    "bootstrap": "^5.1.3",
+    "framer-motion": "^10.12.18",
+    "google-map-react": "^2.1.10",
+    "grommet": "^2.19.1",
+    "grommet-icons": "^4.7.0",
+    "hover.css": "^2.3.2",
+    "prop-types": "^15.8.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.2",
+    "react-dom": "^17.0.2",
+    "react-responsive-carousel": "^3.2.22",
+    "react-router-dom": "^6.1.1",
+    "react-scripts": "4.0.3",
+    "react-select": "^5.2.1",
+    "react-spring": "^9.3.2",
+    "react-tabs": "^3.2.3",
+    "rsuite": "^5.2.4",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

@@ -1,0 +1,44 @@
+.objCard {
+    min-height: 40vh;
+    
+    width: 23%!important;
+    margin: 10px 1%!important;
+}
+.objName{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000!important;
+    border-bottom: 5px solid #edc3c8!important;
+    padding-top: 2vh;
+}
+.objName a {   
+    color: #fff!important;
+    text-decoration: none;
+}
+
+.objName h4 {
+    padding: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.objCardIcon {
+    transform: rotate(-20deg); 
+    margin-right: 3px;
+    color: #ff4242
+}
+
+.trashIcon {
+    color: #ff4242; 
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 460px) {
+    .objCard {
+        width: 48%!important;
+    }
+}

@@ -1,0 +1,38 @@
+.basic-card-style{
+    -webkit-box-shadow: 12px 12px 13px -14px rgba(0,0,0,0.86); 
+    box-shadow: 12px 12px 13px -14px rgba(0,0,0,0.86);
+    border-bottom: 5px solid #edc3c8!important;
+
+}
+
+.icon {
+    color: #f5811e;
+}
+
+.span-info{
+    border-right: 1px solid #d6d6d6;
+    padding-right: 10px;
+}
+
+
+
+.sinfo {
+    padding-left: 10px;
+}
+.marks {
+    width: 12%!important;
+}
+
+@media screen and (max-width: 460px) {
+    .basic-card-style {
+         -webkit-box-shadow: 12px 12px 13px -16px rgba(82, 79, 76, 0.86); 
+         box-shadow: 12px 12px 13px -16px rgba(75, 41, 2, 0.86);
+         border-bottom: 5px solid #edc3c8!important;
+     
+     
+     }
+     .marks {
+        width: 80%!important;
+    }
+    
+}

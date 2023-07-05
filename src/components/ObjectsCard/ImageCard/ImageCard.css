@@ -1,0 +1,19 @@
+.big-img{
+    width: 100%;
+    height: 100%; 
+
+    /* max-width: 100%;
+  height: 80%; */
+}
+
+.sml-img{
+    height: 16vh;
+}
+
+.thumbs{
+  margin-bottom: 0px!important;
+}
+
+.carousel-slider {
+  max-height: 37vh!important;
+}

@@ -1,0 +1,17 @@
+.heading {
+    background-color: #fbe1e4;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.heading h2 {
+
+    font-weight: normal;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 200!important;
+    color: rgb(94, 94, 94);
+}

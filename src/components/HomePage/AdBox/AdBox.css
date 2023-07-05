@@ -1,0 +1,44 @@
+.box {
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.imgBox{
+    background-image: url('../../../img/banners/ad-one.png');
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 12px 12px 13px -10px rgba(0,0,0,0.86); 
+    box-shadow: 12px 12px 13px -10px rgba(0,0,0,0.86);
+}
+
+.imgBox2{
+    background-image: url('../../../img/banners/add_two.png');
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 12px 12px 13px -10px rgba(0,0,0,0.86); 
+    box-shadow: 12px 12px 13px -10px rgba(0,0,0,0.86);
+}
+
+@media screen and (max-width: 460px) {
+    
+    .imgBox {
+        background-size: contain;
+        margin-bottom: 3vh;
+    }
+    .imgBox2 {
+        background-size: contain;
+        height: 42.5vh!important;
+    }
+
+    .box {
+        height: 40vh;
+    }
+    
+}

@@ -1,0 +1,68 @@
+.langImg{
+    height: 30px;
+    border: 1px rgb(39, 39, 39) solid;
+    border-radius: 25px;
+}
+
+.mainNavbar {
+    background-color: #1877F2;
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+    border-bottom: 3px solid #1C39BB;
+}
+
+.logoText{
+    font-size: 3vh;
+    font-weight: bold;
+    color:aliceblue!important;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px!important;
+}
+
+.logoImg{
+    height: 16vh;
+}
+.list-item {
+    display: inline;
+    padding-right: 20px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Baloo 2', cursive;
+}
+
+.list-item:hover {
+
+}
+
+.text-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-menu {
+    margin-bottom: 0px!important;
+}
+
+.icons-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-icon{
+    color: #1C39BB;
+    font-size: 3.5vh;
+    padding-right: 3px;
+}
+@media screen and (max-width: 460px) {
+    .logoImg{
+        height: 10vh;
+    }
+}
+
+.navItem{
+    font-size: 2vh;
+    color: whitesmoke!important;
+}

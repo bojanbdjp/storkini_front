@@ -1,0 +1,29 @@
+.searchDiv {
+    background-color: #0044a6;
+}
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}
+
+.inputGroup {
+    width: 25vw!important;
+    height: 5vh;
+    border: 2px solid #0063f2!important;
+}
+
+.css-b62m3t-container{
+    width: 30vw;
+}
+.css-1s2u09g-control{
+    min-height: 42px!important;
+    border: 2px solid #1C39BB!important;
+}
+
+@media screen and (max-width: 460px) {
+    .inputGroup {
+        width: 70vw!important;
+    }
+}

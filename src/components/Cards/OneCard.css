@@ -1,0 +1,16 @@
+.imgDiv {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+
+.icon {
+    color: gold
+}
+
+.iconType {
+    border: 2px solid red;
+    border-radius: 25px;
+    color: red;
+}

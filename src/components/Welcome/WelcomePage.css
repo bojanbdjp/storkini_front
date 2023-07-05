@@ -1,0 +1,50 @@
+.welcomePage {
+    background-image: url('../../img/welcome-family.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 460px) {
+    .welcomePage {
+        background-image: url('../../img/family2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.half{
+    padding-top: 20vh;
+    height: 100vh;
+    background-color: white;
+}
+.mainText {
+}
+.goBtn {
+    font-weight: bold;
+    color: #fff;
+   
+}
+
+.rotated {
+    transform: rotate(20deg);
+}
+.rotatedMinus {
+    transform: rotate(-20deg);
+}
+
+.slider-box{
+    height: 20vh;
+    padding: 0px 5vw;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.MuiSlider-markLabel{
+    color: seashell!important;
+    font-size: 3vh!important;
+}

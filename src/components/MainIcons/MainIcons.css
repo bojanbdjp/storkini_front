@@ -1,0 +1,177 @@
+.micon {
+    height: 7vh;
+    text-align: center;
+}
+
+.categoryGrid{
+    height: 43vh;
+    padding: 2vh;
+    background-color: #ffdadeb0;
+    -webkit-transition: background-image 0.7s 0.1s ease;
+    -moz-transition: background-image 0.7s 0.1s ease;
+    -o-transition: background-image 0.7s 0.1s ease;
+    transition: background-image 0.7s 0.1s ease;
+    display: grid;
+}
+
+
+.iconGrid {
+    height: 3.5vh;
+}
+
+.gridText {
+    display: inline;
+    color: #fff;
+    font-size: 3vh;
+}
+
+.oneCol {
+    height: 5vh;
+    line-height: 5vh;
+    overflow: clip;
+}
+a {
+    text-decoration: none!important;
+}
+.subCategory {
+    -webkit-transition: visibility  0.1s 0.1s ease-in-out;
+    -moz-transition: visibility  0.1s 0.1s ease-in-out;
+    -o-transition: visibility  0.1s 0.1s ease-in-out;
+    transition: visibility 0.1s 0.1s ease-in-out;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+    color: #fff;
+}
+
+@media screen and (max-width: 460px) {
+    .gridText {
+        font-size: 2.5vh;
+    }
+    .subCategory {
+        font-size: 1.8vh;
+        white-space:nowrap;
+        text-align: left;
+    }
+    .oneCol {
+        height: 5vh;
+        line-height: 5vh;
+        overflow: inherit;
+    }
+}
+
+.subCategory:hover {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+
+
+
+.mainCategory {
+    border-radius: 10px; 
+    text-align: center;
+    font-weight: bold;
+    -webkit-transition: border  0.2s 0.1s ease-in-out;
+    -moz-transition: border  0.2s 0.1s ease-in-out;
+    -o-transition: border  0.2s 0.1s ease-in-out;
+    transition: border  0.2s 0.1s ease-in-out;
+}
+
+
+/* backgrounds */
+
+
+.rodjendanBack {
+    background-color: #F6511D;
+    border: 1px solid #F6511D;
+}
+
+.rodjendan {
+    color: #c2431c;
+}
+.rodjendan:hover {
+    color: #c2431c;
+}
+
+
+.edukacBack {
+    background-color: #FFB400;
+    border: 1px solid #FFB400;
+}
+
+.edukacija {
+    color: #ca8e00;
+}
+.edukacija:hover {
+    color: #ca8e00;
+}
+
+.kupovinaBack{
+    background-color: #00A6ED;
+    border: 1px solid #00A6ED;
+}
+
+.kupovina {
+    color: #0386be;
+}
+.kupovina:hover {
+    color: #0386be;
+}
+
+
+.sportBack{
+    background-color: #7FB800;
+    border: 1px solid #7FB800;
+}
+
+.sport {
+    color: #639101;
+}
+.sport:hover {
+    color: #639101;
+}
+.zdravstvoBack {
+    background-color: #00916e;
+    border: 1px solid #00916e;
+}
+
+.zdravstvo {
+    color: #007257;
+}
+.zdravstvo:hover {
+    color: #007257;
+}
+.rodjendanBack:hover{
+    size: 1.1;
+}
+
+.zdravBackground:hover{
+    border-right: 20px solid #fff;
+}
+
+.zabavBackground:hover{
+    border-left: 20px solid #fff;
+}
+
+.autoBackground:hover{
+    border-right: 20px solid #fff;
+}
+
+.prodBackground:hover{
+    border-right: 20px solid #fff;
+}
+
+.parkBackground:hover{
+    border-left: 20px solid #fff;
+}
+
+.foodBackground:hover{
+    border-left: 20px solid #fff;
+}
+
+.restBackground:hover{
+    border-right: 20px solid #fff;
+}
