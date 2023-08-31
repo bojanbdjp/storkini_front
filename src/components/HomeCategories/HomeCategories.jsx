@@ -1,10 +1,22 @@
 import { Link } from 'react-router-dom'
 import './HomeCategories.css'
+import Loader from "react-js-loader";
+import { useEffect, useState } from 'react'
 function HomeCategories() {
 
+    const [loaded, setLoaded] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoaded(true)
+        }, 800);
+    }, [])
+    
+
     return (
-
-
+        <>
+        {!loaded ? <Loader type="bubble-loop" bgColor={"#003b95"} color={'#003b95'} size={100} /> 
+        : ( 
         <div className='main-categories-div'>
             <div className='cat-outer-box'>
                 <Link to={`/catg/sub/0`}>
@@ -15,8 +27,8 @@ function HomeCategories() {
 
             <div className='cat-outer-box'>
                 <Link to={`/catg/sub/1`}>
-                    <div id='birth-box' className='cat-box'></div>
-                    <div className='cat-heading'><h1 >Rodjendan</h1></div>
+                        <div id='birth-box' className='cat-box'></div>
+                        <div className='cat-heading'><h1 >Rodjendan</h1></div>
                 </Link>
             </div>
             
@@ -33,10 +45,10 @@ function HomeCategories() {
                 </Link>
             </div>
             <div className='cat-outer-box' id='healt-outer-box'>
-                <Link to={`/catg/sub/3`}>
-                    <div id='health-box' className='cat-box'></div>
-                    <div className='cat-heading'><h1 >Zdravstvo</h1></div>
-                </Link>
+                    <Link to={`/catg/sub/3`}>
+                        <div id='health-box' className='cat-box'></div>
+                        <div className='cat-heading'><h1 >Zdravstvo</h1></div>
+                    </Link>
             </div>
         {/* <div >
             <div bgImage={'https://images.unsplash.com/photo-1574958269340-fa927503f3dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1048&q=80'}>
@@ -56,7 +68,9 @@ function HomeCategories() {
 
             </div>
         </div> */}
-    </div>
+    </div> )}
+    </>
+        
     )
 }
 

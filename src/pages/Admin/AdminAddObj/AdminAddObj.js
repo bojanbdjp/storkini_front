@@ -4,8 +4,8 @@ import InputWithHeader from '../../../components/Common/InputWithHeader/InputWit
 
 function AdminAddObj() {
     const [objName, setobjName] = useState("");
-    const [categoryId, setCategoryId] = useState("11");
-    const [subCategoryId, setsubCategoryId] = useState("");
+    const [categoryId, setCategoryId] = useState(11);
+    const [subCategoryId, setsubCategoryId] = useState(0);
     const [address, setAddress] = useState("");
     const [municipality, setMunicipality] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -75,7 +75,7 @@ function AdminAddObj() {
                         <option value={21}>Edukacija - Vrtic</option>
                         <option value={22}>Edukacija - Skola</option>
                         <option value={23}>Edukacija - Strani jezik</option>
-                        <option value={24}>Edukacija - Muzika</option>
+                        {/* <option value={24}>Edukacija - Muzika</option> */}
                         <option value={25}>Edukacija - Umetnost</option>
                         <option value={26}>Edukacija - Priprema za skole</option>
                         <option value={27}>Edukacija - Priprema za fakultete</option>
@@ -94,7 +94,7 @@ function AdminAddObj() {
                 <div className='col-lg-4 col-12'>
                     <p className=' my-1 px-1'>Podkategorija (ukoliko je ima)</p>
                     <select class="form-select" onChange={(e) => setsubCategoryId(e.target.value)}>
-                        <option selected value="0">Izaberite kategoriju</option>
+                        <option selected value={0}>Izaberite kategoriju</option>
                         <option value={1}>Edukacija - Skole za pripremu</option>
                         <option value={2}>Edukacija - Privatni profesori</option>
                         <option value={3}>Edukacija - Edukativni materijal</option>

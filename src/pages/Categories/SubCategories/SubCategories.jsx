@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 import '../../../components/HomeCategories/HomeCategories.css'
+import Loader from "react-js-loader";
 
     const subCatArray = [
         [
@@ -37,19 +38,30 @@ import '../../../components/HomeCategories/HomeCategories.css'
 
 function SubCategories() {
     let { subId } = useParams();
+    const [loaded, setLoaded] = useState(false)
 
+    useEffect(() => {
+        setTimeout(() => {
+            setLoaded(true)
+        }, 800);
+    }, [])
 
     return (
-        <div className='main-categories-div'>
-            {subCatArray[subId].map(subCategory => {
-                return  <div className='cat-outer-box'>
-                <Link to={`/catg/${subCategory.linkId}`} state={{categoryName: subCategory.name}}>
-                    <div id={subCategory.cssId} className='cat-box'></div>
-                    <div className='cat-heading'><h1 >{subCategory.name}</h1></div>
-                </Link>
+        <>
+            {!loaded ? <Loader type="bubble-loop" bgColor={"#003b95"} color={'#003b95'} size={100} /> 
+            : ( 
+            <div className='main-categories-div'>
+                {subCatArray[subId].map(subCategory => {
+                    return  <div className='cat-outer-box'>
+                    <Link to={`/catg/${subCategory.linkId}`} state={{categoryName: subCategory.name}}>
+                        <div id={subCategory.cssId} className='cat-box'></div>
+                        <div className='cat-heading'><h1 >{subCategory.name}</h1></div>
+                    </Link>
+                </div>
+                })}
             </div>
-            })}
-        </div>
+            )}
+        </>
     )
 }
 

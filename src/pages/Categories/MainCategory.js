@@ -1,7 +1,7 @@
 import api from '../../env'
 import React, {useEffect, useState} from 'react'
-import { Button } from 'react-bootstrap'
 import { useParams, useLocation } from 'react-router-dom';
+import Loader from "react-js-loader";
 
 import ObjCard from '../../components/Categories/Cards/ObjCard'
 import './MainCategory.css'
@@ -12,7 +12,7 @@ function MainCategory(props) {
     let params = useParams();
     let location = useLocation();
     const [objs, setobjs] = useState({arr1: []})
-
+    const [loaded, setLoaded] = useState(false)
 
     useEffect(() => {
 
@@ -22,19 +22,16 @@ function MainCategory(props) {
             }
         })
         .then(res => {
-            console.log(res)
-            console.log("Rezultati" , res.data)
             if(res.data != undefined && res.data.message != "Nema rezultata") {
                 setobjs(res.data)
             } else {
                 setobjs({arr1: []})
             }
+            setLoaded(true);
             
         })
         .catch(err => console.log("greska: ", err))
         
-        console.log(location.state);
-
         return () => {
             
         }
@@ -61,13 +58,14 @@ function MainCategory(props) {
                 </div>
 
             
-            
-                <div className="col-12 my-3">
+                {!loaded 
+                ? <Loader type="bubble-loop" bgColor={"#003b95"} color={'#003b95'} size={100} /> 
+                : <div className="col-12 my-3">
                     <div className="row">
                     {specialCatgs ? <SpecialCategories bigObj={objs} /> : elems}
                         
                     </div>
-                </div>
+                </div> }
             </div>
         </div>
     )
