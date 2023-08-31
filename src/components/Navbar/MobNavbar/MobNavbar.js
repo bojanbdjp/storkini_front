@@ -14,7 +14,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 function MobNavbar({setExpanded, expanded}) {
     return (
         <>
-          <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={() => setExpanded(expanded ? false : true)}/>
+            <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={() => setExpanded(expanded ? false : true)}/>
                 
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
@@ -33,7 +33,7 @@ function MobNavbar({setExpanded, expanded}) {
                     <Link to={`/contact`}><li className='list-item hvr-grow d-block' onClick={() => setExpanded(false)}>Kontakt</li></Link>
                     <Link to={`/admin`}><li className='list-item hvr-grow d-block' onClick={() => setExpanded(false)}>Prijavi se</li></Link>
                 </ul>
-                   
+                
                     </Nav>
                     <Form className="d-flex">
                     <FormControl

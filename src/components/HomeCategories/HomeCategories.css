@@ -18,7 +18,7 @@
     position: absolute;
 }
 .cat-heading h1{
-    font-size: 9vh;
+    font-size: 6vh;
     color: #5d4141;
 }
 .cat-outer-box{
@@ -40,58 +40,58 @@
 }
 
 #edu-box{
-    background-image: url('https://images.unsplash.com/photo-1624362772672-2871abf55d12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('../../img//categories//edu.png');
 }
 
 #birth-box{
-    background-image: url('https://images.unsplash.com/photo-1553135422-400ee5852b27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80');
+    background-image: url('../../img/categories/birth.png');
     background-position: bottom!important;
 }
 
 #shopp-box{
-    background-image: url('https://images.unsplash.com/photo-1530325553241-4f6e7690cf36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('../../img//categories/shopp.png');
     background-position: top!important;
 }
 #sport-box{
-    background-image: url('https://images.unsplash.com/photo-1625843211421-e59a32b2d67b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1335&q=80');
+    background-image: url('../../img//categories/sport.png');
     background-position: top!important;
 }
 
 #health-box{
-    background-image: url('https://images.unsplash.com/photo-1589278787442-d2840f4024f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1252&q=80');
+    background-image: url('../../img//categories/health.png');
     background-position: bottom!important;
 }
 
 #school-box{
-    background-image: url('https://images.unsplash.com/photo-1623078478974-7fd58475aab9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80');
+    background-image: url('../../img//categories/school.png');
     background-position: bottom!important;
     filter: contrast(0.7) blur(2px);
 
 }
 
 #kinder-box{
-    background-image: url('https://images.unsplash.com/photo-1607211851821-8be3cd6146f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('../../img//categories/kinder.png');
     background-position: bottom!important;
 }
 
 #lang-box{
-    background-image: url('https://plus.unsplash.com/premium_photo-1670552850996-e3b47528ffc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1315&q=80');
+    background-image: url('../../img//categories/lang.png');
 }
 
 #art-box{
-    background-image: url('https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=410&q=80');
+    background-image: url('../../img//categories/art.png');
     background-position: center!important;
 }
 
 #pris-box{
-    background-image: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80');
+    background-image: url('../../img//categories/pris.png');
     background-position: bottom!important;
     filter: contrast(0.7) blur(2px);
 
 }
 
 #prif-box{
-    background-image: url('https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('../../img//categories/prif.png');
     background-position: bottom!important;
     filter: contrast(0.7) blur(2px);
 
@@ -99,73 +99,73 @@
 }
 
 #food-box {
-    background-image: url('https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('../../img//categories/food.png');
 }
 
 #photo-box{
-    background-image: url('https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('../../img//categories/photo.png');
     filter: contrast(0.7) blur(2px);
 
 }
 
 #music-box{
-    background-image: url('https://images.unsplash.com/photo-1601956349578-c31521587860?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80');
+    background-image: url('../../img//categories/music.png');
     background-position: bottom!important;
     filter: contrast(0.7) blur(2px);
 
 }
 #sweet-box{
-    background-image: url('https://images.unsplash.com/photo-1604287094096-59a7dee979e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80');
+    background-image: url('../../img//categories/sweet.png');
 }
 
 #place-box{
-    background-image: url('https://www.4kids.rs/uploads/gallery/items/images/item_9_60db0576299af.webp');
+    background-image: url('../../img//categories/place.png');
     filter: contrast(0.5) blur(2px);
     
 }
 
 #toys-box{
-    background-image: url('https://images.unsplash.com/photo-1582571352032-448f7928eca3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1292&q=80');
+    background-image: url('../../img//categories/toys.png');
     background-position: top!important;
     filter: contrast(0.8) blur(2px);
 
 }
 
 #baby-box {
-    background-image: url('https://images.unsplash.com/photo-1622290291720-ac961c43ee30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1072&q=80');
+    background-image: url('../../img//categories/baby.png');
 }
 
 #clo-box {
-    background-image: url('https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('../../img//categories/clo.png');
 }
 
 #pans-box {
-    background-image: url('https://images.unsplash.com/photo-1527402858-36f052d83df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80');
+    background-image: url('../../img//categories/pans.png');
 }
 
 #medi-box {
-    background-image: url('https://plus.unsplash.com/premium_photo-1661777752178-fa6055526eb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80');
+    background-image: url('../../img//categories/medi.png');
     filter: contrast(0.7) blur(2px);
 }
 
 #private-box {
-    background-image: url('https://images.unsplash.com/photo-1631248055158-edec7a3c072b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1161&q=80');
+    background-image: url('../../img//categories/private.png');
 }
 
 #state-box {
-    background-image: url('https://images.unsplash.com/photo-1600851555921-d280ba3f019a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1189&q=80');
+    background-image: url('../../img//categories/state.png');
     background-position: bottom!important;
 
 }
 
 #sport-school-box {
-    background-image: url('https://images.unsplash.com/photo-1600077063877-22118d6290eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('../../img//categories/sportSchool.png');
     filter: contrast(0.5) blur(2px);
 
 }
 
 #pools-box {
-    background-image: url('https://images.unsplash.com/flagged/photo-1578467992042-7e2e9650cfbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-image: url('../../img//categories/pools.png');
 }
 
 #prif-box + .cat-heading,
@@ -185,6 +185,6 @@
         flex-basis: auto!important;
     }
     .cat-heading h1{
-        font-size: 6vh;
+        font-size: 4vh;
     }
 }

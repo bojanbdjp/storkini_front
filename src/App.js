@@ -31,7 +31,7 @@ function App() {
       </StyledEngineProvider>
       
   return (
-    (localStorage.getItem('welcomeLoaded') == null && !stateWelcomeLoaded) ? welcome : (
+    // (localStorage.getItem('welcomeLoaded') == null && !stateWelcomeLoaded) ? welcome : (
       // "homepage": "https://bojanbdjp.github.io/storkini_front",
       // basename={`${process.env.PUBLIC_URL}/`}
       <BrowserRouter >
@@ -49,7 +49,7 @@ function App() {
           </Route>
         </Routes>
     </BrowserRouter>
-    )
+    // )
 
   );
 }

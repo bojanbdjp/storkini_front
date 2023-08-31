@@ -18,18 +18,11 @@ function MainNavbar() {
     let chooseNav;
     +width > 500 ? chooseNav = <DesktopNav/> : chooseNav = <MobNavbar setExpanded={setExpanded} expanded={expanded}/>
 
-   
-
     return (
         <Navbar  expand="md" className="mainNavbar" expanded={expanded} >
             <Container fluid>
                 <Navbar.Brand className="logoText"><Link to="/" > <img src={logo} className="logoImg"/></Link></Navbar.Brand>
-                {chooseNav}
-                
-                
-
-                
-                
+                {chooseNav}  
             </Container>
         </Navbar>
     )

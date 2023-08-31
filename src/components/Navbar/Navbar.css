@@ -5,7 +5,7 @@
 }
 
 .mainNavbar {
-    background-color: #1877F2;
+    background-color: #003b95;
     padding-top: 0px!important;
     padding-bottom: 0px!important;
     border-bottom: 3px solid #1C39BB;
@@ -20,7 +20,7 @@
 }
 
 .logoImg{
-    height: 16vh;
+    height: 10vh;
 }
 .list-item {
     display: inline;
