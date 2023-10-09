@@ -1,0 +1,63 @@
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.filter-section {
+    margin-bottom: 15px;
+}
+
+.filter-section > h3, 
+.filter-section > .filter-header {
+    margin-bottom: 0.25rem;
+    border-bottom: 5px solid #fbe1e4;
+    background-color: white;
+    padding: 2px 6px;
+    color: #5e5e5e;
+}
+.filter-section > label  {
+    display: flex;
+}
+
+.filter-section > label > input {
+    margin-right: 0.35rem;
+}
+
+.filter-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-header h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    color: #5e5e5e;
+
+}
+.filter-header-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.filter-header-arrow > svg{
+    color: #5e5e5e;
+}
+
+  /* Styles for mobile */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    .filter-section {
+        margin-right: 20px;
+    }
+}

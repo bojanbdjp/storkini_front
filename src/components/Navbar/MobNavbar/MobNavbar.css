@@ -1,4 +1,13 @@
 .offcanvas {
-    background-color: #003b95!important;
+    background-color: #d0dcff!important;
     color: #fff!important;
+}
+#offcanvasNavbarLabel{
+    font-size: 35px;
+    color: #386ab3;
+    font-weight: bold;
+}
+
+.ul-menu{
+    padding-left: 0px;
 }

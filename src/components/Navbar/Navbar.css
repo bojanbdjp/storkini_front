@@ -5,16 +5,16 @@
 }
 
 .mainNavbar {
-    background-color: #003b95;
+    background-color: #d0dcff;
     padding-top: 0px!important;
     padding-bottom: 0px!important;
-    border-bottom: 3px solid #1C39BB;
+    border-bottom: 3px solid #386ab3;
 }
 
 .logoText{
     font-size: 3vh;
     font-weight: bold;
-    color:aliceblue!important;
+    color:#386ab3!important;
     font-family: 'Roboto', sans-serif;
     padding: 0px!important;
 }
@@ -25,9 +25,9 @@
 .list-item {
     display: inline;
     padding-right: 20px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.5rem;
-    color: #fff;
+    color: #386ab3;
     font-family: 'Baloo 2', cursive;
 }
 

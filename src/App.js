@@ -40,6 +40,7 @@ function App() {
               <Route index  element={<Home />} />
               <Route path="/catg/:catgId" element={<MainCategory />} />
               <Route path="/catg/sub/:subId" element={<SubCategories />} />
+              <Route path="/catg/sub/:subId" element={<SubCategories />} />
               <Route path="/obj/:objName" element={<Objectasa />} />
               <Route path="admin" element={<AdminMain />}/>
               <Route path="admin/newObj" element={<AdminAddObj />} />

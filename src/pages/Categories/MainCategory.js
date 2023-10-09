@@ -6,6 +6,7 @@ import Loader from "react-js-loader";
 import ObjCard from '../../components/Categories/Cards/ObjCard'
 import './MainCategory.css'
 import SpecialCategories from '../../components/SpecialCategories/SpecialCategories';
+import LeftFilter from '../../components/LeftFilter/LeftFilter';
 
 function MainCategory(props) {
     
@@ -50,6 +51,35 @@ function MainCategory(props) {
         })
     }
 
+    const [filterOptions, setFilterOptions] = useState({
+        schoolType: [],
+        schoolOwnership: [],
+        location: []
+    });
+
+    console.log(filterOptions)
+    
+    const handleFilterChange = (newFilterOptions) => {
+        setFilterOptions(newFilterOptions);
+        // You can perform additional actions here, like fetching filtered data from an API
+        
+        
+        api.post('/filterObjects', {
+            catg: params.catgId,
+            filterOptions: newFilterOptions,
+        })
+        .then(res => {
+            if(res.data != undefined && res.data.message != "Nema rezultata") {
+                setobjs(res.data)
+            } else {
+                setobjs({arr1: []})
+            }
+            setLoaded(true);
+            
+        })
+        .catch(err => console.log("greska: ", err))
+    };
+
     return (
         <div className='col-12'>
             <div className="row" style={{marginTop: '10px'}}>
@@ -57,15 +87,27 @@ function MainCategory(props) {
                     <h2 className='m-0 heading-text '>{location.state != null ? location.state.categoryName : ''}</h2>
                 </div>
 
-            
-                {!loaded 
-                ? <Loader type="bubble-loop" bgColor={"#003b95"} color={'#003b95'} size={100} /> 
-                : <div className="col-12 my-3">
-                    <div className="row">
-                    {specialCatgs ? <SpecialCategories bigObj={objs} /> : elems}
-                        
+                <div className="parent-container">
+                    {(params.catgId == 21 || params.catgId == 22) ? (
+                    <div className="filter-container">
+                        <LeftFilter filterOptions={filterOptions} onFilterChange={handleFilterChange} catgId={params.catgId}/>
+                    </div>)
+                    : <></>}
+
+                    <div className='right-content'>
+
+                        {!loaded 
+                        ? <Loader type="bubble-loop" bgColor={"#003b95"} color={'#003b95'} size={100} /> 
+                        : <div className="col-12 my-3">
+                            <div className="row">
+                            {specialCatgs ? <SpecialCategories bigObj={objs} /> : elems}
+                                
+                            </div>
+                        </div> }
                     </div>
-                </div> }
+
+                </div>
+
             </div>
         </div>
     )

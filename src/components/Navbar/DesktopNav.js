@@ -26,7 +26,7 @@ function DesktopNav() {
                 <div className='col-4 icons-menu'>
 
             
-                <Link to={`/admin`}><button className='btn btn-outline-light'>Prijavi se</button></Link>
+                <Link to={`/admin`}><button className='btn btn-outline-primary'>Prijavi se</button></Link>
                     {/* <img src={gblogo} alt="logo" className="langImg mx-3"></img> */}
 
                 </div>

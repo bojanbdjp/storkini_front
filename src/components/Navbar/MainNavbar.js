@@ -3,7 +3,7 @@ import  Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 
 import './Navbar.css'
-import logo from '../../img/logo/logo-white.png'
+import logo from '../../img/logo/logo.png'
 import MobNavbar from './MobNavbar/MobNavbar'
 import DesktopNav from './DesktopNav';
 import { Link } from 'react-router-dom'

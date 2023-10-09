@@ -15,3 +15,29 @@
     font-weight: 200!important;
     color: rgb(94, 94, 94);
 }
+
+
+.parent-container {
+    display: flex;
+}
+
+.filter-container {
+    flex: 0 0 150px; /* Set the width of the filter container as needed */
+    background-color: #f1f1f1; /* Optional: Set a background color for the filter container */
+    padding: 20px;
+    padding-left: 0px;
+}
+
+/* Styles for the other part of the code on the right */
+.right-content {
+    flex: 1; /* This makes the right content take the remaining space */
+    padding: 20px;
+/* Add other styles as needed */
+}
+
+@media (max-width: 768px) {
+    .parent-container {
+        flex-direction: column;
+        width: 100%;
+    }
+}

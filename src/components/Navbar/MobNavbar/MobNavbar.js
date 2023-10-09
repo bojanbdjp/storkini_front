@@ -35,14 +35,14 @@ function MobNavbar({setExpanded, expanded}) {
                 </ul>
                 
                     </Nav>
-                    <Form className="d-flex">
+                    {/* <Form className="d-flex">
                     <FormControl
                         type="search"
                         placeholder="Ukucajte ime objekta"
                         className="me-2 mt-3"
                     />
                     <Button className="mt-3" variant="secondary">Pretraga</Button>
-                    </Form>
+                    </Form> */}
                 </Offcanvas.Body>
                 </Navbar.Offcanvas>  
         </>

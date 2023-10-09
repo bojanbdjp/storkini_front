@@ -22,8 +22,39 @@ function AdminAddObj() {
     const [description, setDescription] = useState("");
     const [details, setDetails] = useState("");
 
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState({msg: "", type: 0});
 
+
+    let municipalities = ["Čukarica", "Novi Beograd", "Palilula", "Rakovica",
+    "Savski venac", "Stari grad", "Voždovac", "Vračar", "Zemun",
+    "Zvezdara", "Barajevo", "Grocka", "Lazarevac", "Mladenovac", 
+    "Obrenovac", "Sopot", "Surčin"]
+    municipalities = municipalities.map((value, index) => {
+        return {name: value, id: index}
+    })
+
+    const [schoolTypeVisible, setSchoolTypeVisible] = useState(false);
+    const [schoolOwnershipVisible, setSchoolOwnershipVisible] = useState(false);
+    const [selectedOwnership, setSelectedOwnership] = useState('private');
+    const [selectedSchoolType, setSelectedSchoolType] = useState('primary');
+    const [muni, setMuni] = useState(0);
+
+    const categoryIdChange = (value) => {
+        console.log(value)
+        setCategoryId(value)
+
+        if(value == 21 ) {
+            setSchoolTypeVisible(false)
+            setSchoolOwnershipVisible(true)
+        } else if(value == 22){
+            setSchoolTypeVisible(true)
+            setSchoolOwnershipVisible(true)
+        } else {
+            setSchoolTypeVisible(false)
+            setSchoolOwnershipVisible(false)
+            console.log("usao u else")
+        }
+    }
 
     const submitForm = () => {
         let paid = JSON.parse(paidOffer)
@@ -39,16 +70,19 @@ function AdminAddObj() {
             images: [image1, image2, image3, image4],
             description,
             details,
-            paidOffer: paid
+            paidOffer: paid,
+            schoolType: categoryId == 22 ? selectedSchoolType : null,
+            schoolOwnership: (categoryId == 22 || categoryId == 21 ) ? selectedOwnership : null,
+            location: (categoryId == 22 || categoryId == 21 ) ? muni : null
         }
 
-        // console.log("zvone ", newObj)
+        console.log("zvone ", newObj)
         api.post('/addNewObject', newObj)
         .then(res => {
-            if(res.data.length > 0) {
-                setMessage(res.data.message)
+            if(res.status == 201) {
+                setMessage({msg: res.data.message, type: 0})
             } else {
-                setMessage(res.data.message)
+                setMessage({msg: res.data.message, type: 1})
             }
             
          })
@@ -66,7 +100,7 @@ function AdminAddObj() {
 
                 <div className='col-lg-4 col-12'>
                     <p className=' my-1 px-1'>Kategorija</p>
-                    <select class="form-select" onChange={(e) => setCategoryId(e.target.value)}>
+                    <select class="form-select" onChange={(e) => categoryIdChange(e.target.value)}>
                         <option selected value="11">Rodjendan - Prostor</option>
                         <option value={12}>Rodjendan - Muzika</option>
                         <option value={13}>Rodjendan - Fotograf</option>
@@ -116,7 +150,70 @@ function AdminAddObj() {
 
                     </select>
                 </div>
-                <InputWithHeader setInput={setMunicipality} name='Opština, grad' class='col-lg-4 col-12'/>
+
+                { (schoolTypeVisible === true || schoolOwnershipVisible === true) ?
+                <div className='col-lg-12 col-12 my-3'>
+                    <div className='row'>
+                        {schoolOwnershipVisible === true ? <div className='col-lg-2 col-12'>
+                            <p className='my-1 pr-1'>Vlasništvo škole/vrtića</p>
+                            <label className='d-flex'>
+                                <input
+                                    type="radio"
+                                    value="private"
+                                    checked={selectedOwnership === 'private'}
+                                    onChange={() => setSelectedOwnership('private')}
+                                />
+                                <span className='mx-2'>Privatna škola/vrtić</span>
+                            </label>
+                            <label className='d-flex'>
+                                <input
+                                type="radio"
+                                value="public"
+                                checked={selectedOwnership === 'public'}
+                                onChange={() => setSelectedOwnership('public')}
+                                />
+                                <span className='mx-2'>Državna škola/vrtić</span>
+                            </label>
+                        </div>
+                        : <></>}
+                        
+
+                        {schoolTypeVisible === true ? <div className='col-lg-2 col-12'>
+                            <p className='my-1 pr-1'>Tip škole</p>
+                            <label className='d-flex'>
+                                <input
+                                    type="radio"
+                                    value="private"
+                                    checked={selectedSchoolType === 'primary'}
+                                    onChange={() => setSelectedSchoolType('primary')}
+                                />
+                                <span className='mx-2'>Osnovna škola</span>
+                            </label>
+                            <label className='d-flex'>
+                                <input
+                                type="radio"
+                                value="public"
+                                checked={selectedSchoolType === 'secondary'}
+                                onChange={() => setSelectedSchoolType('secondary')}
+                                />
+                                <span className='mx-2'>Srednja Škola</span>
+                            </label>
+                        </div>
+                        : <></>}
+
+                        {schoolOwnershipVisible === true ? <div className='col-lg-2 col-12'>
+                            <p className=' my-1 px-1'>Opština</p>
+                            <select class="form-select" onChange={(e) => setMuni(+e.target.value)}>
+                                {municipalities.map(mun => { 
+                                    return <option value={mun.id}>{mun.name}</option>
+                                })}
+                            </select>
+                        </div>
+                        : <></>}
+                    </div>
+                </div>
+                : <></>}
+                <InputWithHeader setInput={setMunicipality} name='Grad' class='col-lg-4 col-12'/>
 
                 <InputWithHeader setInput={setAddress} name='Adresa' class='col-lg-4 col-12'/>
                 <InputWithHeader setInput={setPhoneNumber} name='Broj telefona' class='col-lg-4 col-12'/>
@@ -149,7 +246,7 @@ function AdminAddObj() {
 
                 <div className='col-lg-10 col-12 my-3'>
                     <button className='btn btn-primary w-25' onClick={submitForm}>Sacuvaj</button>
-                    {message != "" ? <div className='alert alert-danger my-2'>{message}</div> : "" }
+                    {message.msg != "" ? <div className={`alert ${message.type == 1 ? 'alert-danger' : 'alert-success'} my-2`}>{message.msg}</div> : "" }
                 </div>
             </div>
         </div>
